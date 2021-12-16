@@ -1,0 +1,25 @@
+header {
+  padding: 22.5px 5%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+header.blur {
+  backdrop-filter: blur(2em);
+}
+header section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header section nav .header-nav-item-button {
+  color: #fff;
+  padding: 10px 50px;
+  background-color: #20dcc8;
+  margin: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+header section nav .header-nav-item-button:hover {
+  background-color: #3a3b3c;
+}/*# sourceMappingURL=header.css.map */

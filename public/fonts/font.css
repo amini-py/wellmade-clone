@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: local("Century Gothic"), url("https://fonts.cdnfonts.com/s/18111/GOTHIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MADE Coachella";
+  font-style: normal;
+  font-weight: 400;
+  src: local("MADE Coachella"), url("https://fonts.cdnfonts.com/s/22349/MADE Coachella Regular PERSONAL USE.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MADE Coachella";
+  font-style: normal;
+  font-weight: 250;
+  src: local("MADE Coachella"), url("https://fonts.cdnfonts.com/s/22349/MADE Coachella Thin PERSONAL USE.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MADE Coachella";
+  font-style: normal;
+  font-weight: 300;
+  src: local("MADE Coachella"), url("https://fonts.cdnfonts.com/s/22349/MADE Coachella Light PERSONAL USE.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MADE Coachella";
+  font-style: normal;
+  font-weight: 500;
+  src: local("MADE Coachella"), url("https://fonts.cdnfonts.com/s/22349/MADE Coachella Medium PERSONAL USE.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MADE Coachella";
+  font-style: normal;
+  font-weight: 700;
+  src: local("MADE Coachella"), url("https://fonts.cdnfonts.com/s/22349/MADE Coachella Bold PERSONAL USE.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MADE Coachella";
+  font-style: normal;
+  font-weight: 900;
+  src: local("MADE Coachella"), url("https://fonts.cdnfonts.com/s/22349/MADE Coachella Black PERSONAL USE.woff") format("woff");
+}

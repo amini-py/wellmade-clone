@@ -1,0 +1,33 @@
+@use '../../scss/variables';
+
+header {
+    padding: 22.5px 5%;
+    background-color: hsla(0, 0%, 100%, 0.6);
+
+    &.blur {
+        backdrop-filter: blur(2em);
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            .header-nav-item-button {
+                color: #fff;
+                padding: 10px 50px;
+                background-color: variables.$COLOR--main;
+                margin: 20px;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 0.9rem;
+
+                &:hover {
+                    background-color: variables.$COLOR--third;
+                }
+            }
+        }
+    }
+}

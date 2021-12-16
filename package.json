@@ -1,0 +1,23 @@
+{
+  "name": "wellmade",
+  "version": "1.0.0",
+  "description": "'https://wellmade-website.webflow.io/' Clone App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amini-py/wellmade-clone.git"
+  },
+  "author": "Amirreza Amini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amini-py/wellmade-clone/issues"
+  },
+  "homepage": "https://github.com/amini-py/wellmade-clone#readme",
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "stylelint-config-standard-scss": "^3.0.0"
+  }
+}

@@ -1,0 +1,52 @@
+@use '../../src/scss/variables';
+
+.container-fluid {
+	width: 100%;
+	margin: auto auto;
+}
+
+.button {
+	border-radius: 30px;
+}
+
+input {
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+	background-color: variables.$COLOR--main;
+}
+
+// Typography
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin-block: 20px;
+		font-family: 'MADE Coachella', sans-serif;
+
+		&:hover {
+			color: red;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	transition: variables.$TRANSITION;
+	font-family: 'Century Gothic', Arial;
+
+	&.header-nav-item {
+		color: #222222;
+		padding: 20px;
+		font-size: 1.2em;
+	}
+
+	&.footer-nav-item {
+		color: variables.$COLOR-TYPOGRAPHY--grey;
+	}
+
+	&:hover {
+		color: variables.$COLOR--main;
+	}
+}
