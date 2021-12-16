@@ -1,21 +1,5 @@
 @import url("../fonts/font.css");
+
+/* Components */
 @import url("../../src/components/header/header.css");
-
-video {
-  background-size: cover;
-  background-position: 50% 50%;
-  position: absolute;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  right: -100%;
-  bottom: -100%;
-  top: -100%;
-  left: -100%;
-  object-fit: cover;
-  z-index: -100;
-}
-
-body {
-  background-color: #000;
-}
+@import url("../../src/components/main/main.css");

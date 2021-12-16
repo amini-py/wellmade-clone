@@ -3,6 +3,8 @@
 header {
     padding: 22.5px 5%;
     background-color: hsla(0, 0%, 100%, 0.6);
+    position: fixed;
+    z-index: 10;
 
     &.blur {
         backdrop-filter: blur(2em);
@@ -16,13 +18,7 @@ header {
 
         nav {
             .header-nav-item-button {
-                color: #fff;
-                padding: 10px 50px;
-                background-color: variables.$COLOR--main;
                 margin: 20px;
-                cursor: pointer;
-                font-weight: 700;
-                font-size: 0.9rem;
 
                 &:hover {
                     background-color: variables.$COLOR--third;

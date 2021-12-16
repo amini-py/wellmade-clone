@@ -1,0 +1,44 @@
+main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  object-fit: cover;
+}
+main .backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+main article {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+main article h1 {
+  color: #fff;
+  font-size: 4.25rem;
+  line-height: 74px;
+}
+main article p {
+  color: #e5e6e6;
+  font-size: 1.125rem;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+main article a.button:hover {
+  background-color: #808080;
+}/*# sourceMappingURL=main.css.map */

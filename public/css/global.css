@@ -3,71 +3,42 @@
   margin: auto auto;
 }
 
-.button {
-  border-radius: 30px;
-}
-
 input {
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
-  background-color: #20dcc8;
-}
-
 h1 {
-  margin-block: 20px;
   font-family: "MADE Coachella", sans-serif;
-}
-h1:hover {
-  color: red;
 }
 
 h2 {
-  margin-block: 20px;
   font-family: "MADE Coachella", sans-serif;
-}
-h2:hover {
-  color: red;
 }
 
 h3 {
-  margin-block: 20px;
   font-family: "MADE Coachella", sans-serif;
-}
-h3:hover {
-  color: red;
 }
 
 h4 {
-  margin-block: 20px;
   font-family: "MADE Coachella", sans-serif;
-}
-h4:hover {
-  color: red;
 }
 
 h5 {
-  margin-block: 20px;
   font-family: "MADE Coachella", sans-serif;
-}
-h5:hover {
-  color: red;
 }
 
 h6 {
-  margin-block: 20px;
   font-family: "MADE Coachella", sans-serif;
 }
-h6:hover {
-  color: red;
+
+a, p {
+  font-family: "Century Gothic", Arial;
 }
 
 a {
   text-decoration: none;
   transition: 400ms ease;
-  font-family: "Century Gothic", Arial;
 }
 a.header-nav-item {
   color: #222222;
@@ -79,4 +50,13 @@ a.footer-nav-item {
 }
 a:hover {
   color: #20dcc8;
+}
+a.button {
+  color: #fff;
+  padding: 10px 50px;
+  background-color: #20dcc8;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 30px;
 }/*# sourceMappingURL=global.css.map */
