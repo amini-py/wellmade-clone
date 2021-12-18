@@ -1,5 +1,10 @@
 @import url("../fonts/font.css");
 
+/* Specific class imports */
+@import url("../../src/scss/specific-classes.css");
+
 /* Components */
 @import url("../../src/components/header/header.css");
-@import url("../../src/components/main/main.css");
+@import url("../../src/components/video-main/video-main.css");
+@import url("../../src/components/about-main/about-main.css");
+@import url("../../src/components/clients-main/clients-main.css");

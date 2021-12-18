@@ -1,0 +1,35 @@
+@media (min-width: 1199.98px) {
+  .p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .h1 {
+    font-size: 2.05em;
+  }
+
+  .clients-container {
+    width: 100% !important;
+    margin-bottom: 70px;
+  }
+  .clients-container .single-client {
+    width: 100% !important;
+  }
+
+  .client-feedback {
+    width: 100% !important;
+  }
+  .client-feedback h2 {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .h1 {
+    font-size: 1.8em !important;
+  }
+
+  .p {
+    font-size: 0.9rem !important;
+    padding: 0 !important;
+  }
+}/*# sourceMappingURL=media.css.map */

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/global.css" />
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../src/scss/media.css">
     <title>The Shed Builder Experts - WellMade</title>
     <style>
         * {
@@ -27,9 +28,11 @@
             border: none;
             text-decoration: none !important;
         }
-
+        
         body {
+            scroll-behavior: smooth;
             overflow-x: hidden;
+            width: 100vw;
         }
     </style>
 </head>
@@ -38,8 +41,9 @@
     <!--? START: Header  -->
     <header class="container-fluid blur">
         <section>
-            <img src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b74cc3cbe88662470c9c35_WellMade%20Logo%20Horizontal.svg"
-                alt="Wellmade Logo" width="140" />
+            <a href="#">
+                <img src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b74cc3cbe88662470c9c35_WellMade%20Logo%20Horizontal.svg"
+                    alt="Wellmade Logo" width="140" /></a>
 
             <nav>
                 <a href="#" class="header-nav-item">Design</a>
@@ -50,8 +54,21 @@
     </header>
     <!--? END: Header  -->
 
-    <!--? START: Main -->
-    <main>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--? START: Video Background Main -->
+    <main class="hero-video-main">
         <video autoplay loop style="
                 background-image: url('https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b87f9911f0b74b3f3b1d3e_SHED 1 - FULL  - 1920x1080 _9-poster-00001.jpg');
             " muted="true">
@@ -61,12 +78,179 @@
         </video>
         <div class="backdrop"></div>
         <article>
-            <h1>We Design & Build<br />Modern Sheds</h1>
-            <p>Your private, pre-fabricated, backyard office, art studio or sleeping nook.</p>
+            <h1 class="h1">We Design & Build<br />Modern Sheds</h1>
+            <p class="center">Your private, pre-fabricated, backyard office, art studio or sleeping nook.</p>
             <a href="#" class="button">All products</a>
         </article>
     </main>
-    <!--? END: Main -->
+    <!--? END: Video Background Main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--? START: About Main -->
+    <main class="hero-about-main container center">
+        <article>
+            <h2>Who we are</h2>
+            <hr class="center">
+            <p class="p" style="padding-inline: 25%; margin-bottom: 100px;">
+                We are professionals who know how to execute from idea to completion. We guide our clients through the
+                design
+                process, work with the city to get permits, and provide construction administration to make sure that
+                the
+                vision and client's needs are met.
+            </p>
+        </article>
+        <article class="cards-container" style="overflow-x: hidden;">
+            <figure class="card col-12 col-lg4" style="opacity: 0;">
+                <article class="product-image pr-1"></article>
+                <article class="product-body">
+                    <h1 class="product-name">LOMBARD</h1>
+                    <p class="product-description p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        dolor turpis, dictum a
+                        efficitur in, aliquam eget velit. Sed efficitur eget risus nec tristique.</p>
+                    <section class="product-links"><a href="#" class="button">More details</a><a href="#">View All</a>
+                    </section>
+                </article>
+            </figure>
+            <figure class="card col-12 col-lg4">
+                <article class="product-image pr-2"></article>
+                <article class="product-body">
+                    <h1 class="product-name">TWIN PEAKS</h1>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        dolor turpis, dictum a
+                        efficitur in, aliquam eget velit. Sed efficitur eget risus nec tristique.</p>
+                    <section class="product-links"><a href="#" class="button">More details</a><a href="#">View All</a>
+                    </section>
+                </article>
+            </figure>
+            <figure class="card col-12 col-lg4" style="opacity: 0;">
+                <article class="product-image pr-3"></article>
+                <article class="product-body">
+                    <h1 class="product-name">PRESIDIO</h1>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        dolor turpis, dictum a
+                        efficitur in, aliquam eget velit. Sed efficitur eget risus nec tristique.</p>
+                    <section class="product-links"><a href="#" class="button">More details</a><a href="#">View All</a>
+                    </section>
+                </article>
+            </figure>
+            <section class="cards-controls">
+                <a href="#" class="control rounded">
+                    <img src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b65860fe21b07aebb653e9_arrow-left-light(24x24)%402x.svg"
+                        alt="arrow" width="19">
+                </a>
+                <a href="#" class="control rounded">
+                    <img src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b65860fe21b0c550b653f6_arrow-right-light(24x24)%402x.svg"
+                        alt="arrow" width="19">
+                </a>
+            </section>
+        </article>
+    </main>
+    <!--? END: About Main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--? Start: Testimonials -->
+    <main class="testimonials container">
+        <section class="clients-header">
+            <h2>Testimonials</h2>
+            <hr>
+        </section>
+        <section class="clients d-flex">
+            <article class="clients-container col-12 col-lg6">
+                <!--? SINGLE: Client -->
+                <figure class="d-flex single-client client-active">
+                    <img class="client-image rounded" width="60" height="60"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b87bf8df1741dab78709e2_Tim.jpg"
+                        alt="Tim Maes Feedback">
+                    <figcaption>
+                        <span class="client-name">Tim Maes</span>
+                        <p class="client-state">Ookland, CA</p>
+                    </figcaption>
+                </figure>
+                <!--? SINGLE: Client -->
+                <figure class="d-flex single-client margin-block">
+                    <img class="client-image rounded" width="60" height="60"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b87bf8e3b4cf6d408f8665_Mark.jpg"
+                        alt="Mark Lieberwitz Feedback">
+                    <figcaption>
+                        <span class="client-name">Mark Lieberwitz</span>
+                        <p class="client-state">Piedmont, CA</p>
+                    </figcaption>
+                </figure>
+                <!--? SINGLE: Client -->
+                <figure class="d-flex single-client">
+                    <img class="client-image rounded" width="60" height="60"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b748ade5bdb72ca72a5fe8_users-solid.svg"
+                        alt="Tim Maes Feedback">
+                    <figcaption>
+                        <span class="client-name">Tim Maes</span>
+                        <p class="client-state">Ookland, CA</p>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="client-feedback col-12 col-lg6">
+                <h2 style="font-size: 2.5rem;">It was a great<br>experience!</h2>
+                <article class="feedback-stars">
+                    <img width="20"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b65efb50078a3079b86064_favorite-star-svgrepo-com.svg"
+                        alt="">
+                    <img width="20"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b65efb50078a3079b86064_favorite-star-svgrepo-com.svg"
+                        alt="">
+                    <img width="20"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b65efb50078a3079b86064_favorite-star-svgrepo-com.svg"
+                        alt="">
+                    <img width="20"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b65efb50078a3079b86064_favorite-star-svgrepo-com.svg"
+                        alt="">
+                    <img width="20"
+                        src="https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b65efb50078a3079b86064_favorite-star-svgrepo-com.svg"
+                        alt="">
+                </article>
+                <p class="p">We couldn't be happier with the end product. WellMade team<br> has been
+                    the ideal partner in the design-build process for our backyard office shed.</p>
+            </article>
+        </section>
+    </main>
+    <!--? END: Testimonials -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

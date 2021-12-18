@@ -1,22 +1,18 @@
-@use '../../scss/variables';
-@use '../../scss/mixins';
+@use '../../scss/root/variables';
+@use '../../scss/root/mixins';
 
-@mixin p-absolute--tl-0 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-main {
+
+.hero-video-main {
+    @include mixins.flex;
+
     position: relative;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-inline: 5px;
 
     video {
         @include mixins.wh-100;
-        @include p-absolute--tl-0();
+        @include mixins.p-absolute--tl-0;
         
         z-index: -2;
         object-fit: cover;
@@ -24,7 +20,7 @@ main {
 
     .backdrop {
         @include mixins.wh-100;
-        @include p-absolute--tl-0();
+        @include mixins.p-absolute--tl-0;
 
         z-index: -1;
         background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -37,15 +33,13 @@ main {
 
         h1 {
             color: #fff;
-            font-size: 4.25rem;
-            line-height: 74px;
         }
 
         p {
             color: #e5e6e6;
-            font-size: 1.125rem;
-            margin-top: 5px;
-            margin-bottom: 40px;
+            font-size: 1.125em;
+            margin-top: 10px;
+            margin-bottom: 45px;
         }
 
         a.button {

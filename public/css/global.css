@@ -1,11 +1,35 @@
+* {
+  transition: 400ms ease;
+}
+
 .container-fluid {
   width: 100%;
   margin: auto auto;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.rounded {
+  border-radius: 100%;
+}
+
+.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
 input {
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  border: 1px solid #20dcc8;
+  border-radius: 10px;
+  width: 75px;
+  margin: 10px 0 25px 0;
 }
 
 h1 {
@@ -32,13 +56,27 @@ h6 {
   font-family: "MADE Coachella", sans-serif;
 }
 
-a, p {
+.h1 {
+  font-size: 4.25rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+a, p, span {
   font-family: "Century Gothic", Arial;
+}
+
+p {
+  color: #808080;
+  line-height: 1.4;
 }
 
 a {
   text-decoration: none;
-  transition: 400ms ease;
 }
 a.header-nav-item {
   color: #222222;
@@ -59,4 +97,5 @@ a.button {
   font-weight: 700;
   font-size: 0.9rem;
   border-radius: 30px;
+  box-shadow: 0 8px 20px 0 rgba(51, 51, 51, 0.1);
 }/*# sourceMappingURL=global.css.map */

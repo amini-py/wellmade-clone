@@ -1,0 +1,21 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin wh-100 {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin p-absolute--tl-0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin center-element {
+    margin-inline: auto;
+    text-align: center;
+}

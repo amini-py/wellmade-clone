@@ -1,0 +1,43 @@
+// Large & XLarge devices (Laptops, Monitors, bigerr than 1200)
+@media (min-width: 1199.98px) {
+    .p {
+        font-size: 1.2rem;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .h1 {
+        font-size: 2.05em;
+    }
+    .clients-container {
+        width: 100% !important;
+        margin-bottom: 70px;
+
+        .single-client {
+            width: 100% !important;
+        }
+    }
+    .client-feedback {
+        width: 100% !important;
+        h2 {
+            font-size: 2rem !important;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .h1 {
+        font-size: 1.8em !important;
+    }
+
+    .p {
+        font-size: 0.9rem !important;
+        padding: 0 !important;
+    }
+}
