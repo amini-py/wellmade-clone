@@ -1,0 +1,7 @@
+.gallery-main {
+  flex-wrap: wrap;
+  padding: 60px 2.5%;
+}
+.gallery-main section img {
+  width: 100%;
+}/*# sourceMappingURL=gallery-main.css.map */

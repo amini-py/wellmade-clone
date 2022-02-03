@@ -1,0 +1,89 @@
+.cards-main {
+  padding: 60px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 16px;
+}
+.cards-main .single-card {
+  position: relative;
+  overflow: hidden !important;
+  height: 23vw;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.cards-main .single-card:hover .card-bg {
+  transform: scale3d(1.05, 1.05, 1);
+}
+.cards-main .single-card:hover .single-card-text {
+  bottom: 25px;
+}
+.cards-main .single-card:hover .single-card-text p {
+  opacity: 1;
+}
+.cards-main .single-card::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: linear-gradient(180deg, rgba(21, 21, 21, 0) 15%, rgba(21, 21, 21, 0.8) 85%);
+  z-index: -1;
+}
+.cards-main .single-card:hover::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: linear-gradient(180deg, rgba(21, 21, 21, 0) 15%, rgba(21, 21, 21, 0.8) 85%);
+}
+.cards-main .single-card .card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  height: 100%;
+}
+.cards-main .single-card .card-bg.c-bg1 {
+  background: url('https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60c32381d81b19b369ad0648_charles-deluvio-AT5vuPoi8vc-unsplash.jpg') center/cover;
+  background-position: 50%;
+}
+.cards-main .single-card .card-bg.c-bg2 {
+  background: url('https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60c323a822b8e2e8fdb21f18_rob-lambert-9Q_pLLP_jmA-unsplash.jpg') center/cover;
+  background-position: 50%;
+}
+.cards-main .single-card .card-bg.c-bg3 {
+  background: url('https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60c323a6b35323b6e6ab9453_natasha-connell-byp5TTxUbL0-unsplash.jpg') center/cover;
+  background-position: 50%;
+}
+.cards-main .single-card .card-bg.c-bg4 {
+  background: url('https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60c323f693cd064b819ef540_GettyImages-649699796-scaled.jpg') center/cover;
+  background-position: 50%;
+}
+.cards-main .single-card .single-card-text {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -80px;
+  z-index: 0;
+  padding-inline: 10px;
+  color: #fff;
+  text-align: center;
+  transition: all 400ms ease;
+}
+.cards-main .single-card .single-card-text h3 {
+  font-size: 1.3rem;
+}
+.cards-main .single-card .single-card-text p {
+  color: #e5e6e6;
+  font-size: 0.8rem;
+  margin-top: 50px;
+  opacity: 0;
+  line-height: 1.75;
+}/*# sourceMappingURL=cards.css.map */

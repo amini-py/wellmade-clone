@@ -1,0 +1,46 @@
+@use '../../scss/root/variables';
+@use '../../scss/root/mixins';
+
+
+
+.hero-main {
+    @include mixins.flex;
+
+    position: relative;
+    height: 80vh;
+
+    .hero-bg {
+        @include mixins.wh-100;
+        
+        background: url("https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b87cb14d0376e975f2a293_Presidio-min.jpg") center/cover no-repeat;
+        background-position: 0 0
+    }
+
+    article {
+        position: absolute;
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        padding-inline: 7.5px;
+        padding-top: 80px;
+
+        span {
+            color: variables.$COLOR--main;
+            font-size: 1.3rem;
+        }
+
+        h1 {
+            color: #fff;
+            padding-block: 9px;
+        }
+
+        p {
+            color: #e5e6e6;
+            font-size: 0.9rem;
+            max-width: 65ch;
+            margin-top: 10px;
+            margin-bottom: 45px;
+            text-align: center;
+        }
+    }
+}

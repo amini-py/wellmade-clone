@@ -1,0 +1,37 @@
+@use "../../scss/root/variables";
+
+.members-container {
+    padding: 60px 10%;
+
+    .member {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+
+        .member-img {
+            width: 300px;
+            border-radius: 30px;
+            margin-right: 2vw;
+        }
+
+        .member-description {
+            padding-right: 80px;
+            span {
+                font-size: 1.3rem;
+                color: variables.$COLOR--main;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+                margin-block: 4px;
+            }
+
+            p {
+                font-size: 1.15rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}

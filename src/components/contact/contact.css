@@ -1,0 +1,36 @@
+.contact-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 60px 2.5%;
+}
+.contact-form-container .contact-txt {
+  padding: 100px 25px;
+  justify-self: center;
+  align-self: center;
+  background-color: #3A3B3C;
+}
+.contact-form-container .contact-txt h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.contact-form-container .contact-txt p {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+.contact-form-container .contact-txt .button {
+  border: 1px solid #20dcc8;
+  background-color: transparent;
+  color: #20dcc8;
+  height: 40px;
+}
+.contact-form-container .contact-txt .button:hover {
+  background-color: #20dcc8;
+  color: #fff;
+}
+.contact-form-container .contact-img {
+  background: url("https://uploads-ssl.webflow.com/60b4554894a70f662076991a/60b8871fb929e9596ee81a90_SHED_PH-4_Photo%20-%206-min-p-1600.jpeg") center/cover no-repeat;
+  height: auto;
+}/*# sourceMappingURL=contact.css.map */

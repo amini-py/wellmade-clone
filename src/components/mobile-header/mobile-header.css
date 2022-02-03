@@ -1,0 +1,29 @@
+.mobile-header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 101;
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.79, 0, 0.72, 0.99) 0s;
+  padding-top: 10vw;
+}
+.mobile-header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-header nav .header-nav-item-mobile {
+  margin-bottom: 20px;
+  padding: 0;
+}
+.mobile-header p {
+  font-size: 1.1rem !important;
+}
+
+.nav-active {
+  transform: translateX(0);
+}/*# sourceMappingURL=mobile-header.css.map */

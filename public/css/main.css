@@ -1,10 +1,16 @@
 @import url("../fonts/font.css");
 
 /* Specific class imports */
-@import url("../../src/scss/specific-classes.css");
 
 /* Components */
+@import url("../../src/components/mobile-header/mobile-header.css");
 @import url("../../src/components/header/header.css");
-@import url("../../src/components/video-main/video-main.css");
-@import url("../../src/components/about-main/about-main.css");
-@import url("../../src/components/clients-main/clients-main.css");
+@import url("../../src/components/hero-main/hero-main.css");
+@import url("../../src/components/cards/cards.css");
+@import url("../../src/components/member/member.css");
+@import url("../../src/components/gallery-main/gallery-main.css");
+@import url("../../src/components/contact/contact.css");
+@import url("../../src/components/footer/footer.css");
+
+@import url("../../src/scss/media.css");
+@import url("../../src/scss/specific-classes.css");

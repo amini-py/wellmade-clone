@@ -9,6 +9,7 @@
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .rounded {
@@ -18,6 +19,23 @@
 .center {
   text-align: center;
   margin-inline: auto;
+}
+
+.margin-top {
+  margin-top: 150px;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}
+
+.w-100 {
+  width: 100%;
 }
 
 input {
@@ -66,8 +84,9 @@ h2 {
   font-weight: 400;
 }
 
-a, p, span {
+a, p, span, figure {
   font-family: "Century Gothic", Arial;
+  max-width: 65ch;
 }
 
 p {
@@ -98,4 +117,9 @@ a.button {
   font-size: 0.9rem;
   border-radius: 30px;
   box-shadow: 0 8px 20px 0 rgba(51, 51, 51, 0.1);
+}
+
+div {
+  font-family: "Century Gothic", sans-serif;
+  font-weight: 700;
 }/*# sourceMappingURL=global.css.map */

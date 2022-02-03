@@ -1,11 +1,11 @@
 @use '../../scss/root/variables';
 @use '../../scss/root/mixins';
 
-header {
-    padding: 22.5px 5%;
+.header-wrapper {
+    padding: 22.5px 4%;
     background-color: hsla(0, 0%, 100%, 0.6);
     position: fixed;
-    z-index: 10;
+    z-index: 9999;
 
     &.blur {
         backdrop-filter: blur(2em);
@@ -22,7 +22,8 @@ header {
                 margin: 20px;
 
                 &:hover {
-                    background-color: variables.$COLOR--third;
+                    background-color: variables.$COLOR--secondary;
+                    transform: translate(0px, -1.5px);
                 }
             }
         }

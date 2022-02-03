@@ -1,0 +1,55 @@
+@use '../../scss/root/variables';
+
+footer.footer-container {
+    background-color: variables.$COLOR--secondary;
+    padding: 35px 0;
+
+    .footer {
+        justify-content: space-between;
+        padding: 0 2.5%;
+
+        .footer-item {
+
+            * {
+                text-transform: uppercase;
+                display: block;
+            }
+
+            span {
+                font-size: 0.65rem;
+                color: variables.$COLOR-TYPOGRAPHY--grey;
+                line-height: 1.8;
+            }
+
+            div {
+                color: #fff;
+            }
+
+            a {
+                font-size: 0.9em;
+                
+                &.footer-link {
+                    color: variables.$COLOR-TYPOGRAPHY--grey;
+                    padding: 7.5px 0;
+                }
+
+                &.social-icons {
+                    display: inline-block;
+                    width: 35px;
+                }
+
+                &.icon-footer {
+                    transform: translate(-12px, 0);
+                }
+
+                &:hover {
+                    color: variables.$COLOR--main;
+                }
+            }
+
+            .social-links-container {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

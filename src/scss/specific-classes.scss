@@ -11,7 +11,7 @@
 /* sm Breakpoint */
 @media (min-width: 576px) {
   @for $i from 1 to 13 {
-    .col-sm#{$i} {
+    .col-sm-#{$i} {
       flex: 0 0 auto;
       width: calc(8.33% * #{$i});
     }
@@ -21,17 +21,29 @@
 /* md Breakpoint */
 @media (min-width: 768px) {
   @for $i from 1 to 13 {
-    .col-md#{$i} {
+    .col-md-#{$i} {
       flex: 0 0 auto;
       width: calc(8.33% * #{$i});
     }
   }
+
+  .d-md-none {
+    display: none;
+  }
+
 }
+
+@media (max-width: 768px) {
+  .d-sm-none {
+    display: none;
+  }
+}
+
 
 /* lg Breakpoint */
 @media (min-width: 992px) {
   @for $i from 1 to 13 {
-    .col-lg#{$i} {
+    .col-lg-#{$i} {
       flex: 0 0 auto;
       width: calc(8.33% * #{$i});
     }
@@ -41,7 +53,7 @@
 /* xl Breakpoint */
 @media (min-width: 1200px) {
   @for $i from 1 to 13 {
-    .col-xl#{$i} {
+    .col-xl-#{$i} {
       flex: 0 0 auto;
       width: calc(8.33% * #{$i});
     }
@@ -51,52 +63,17 @@
 /* xxl Breakpoint */
 @media (min-width: 1400px) {
   @for $i from 1 to 13 {
-    .col-xxl#{$i} {
+    .col-xxl-#{$i} {
       flex: 0 0 auto;
       width: calc(8.33% * #{$i});
     }
   }
-}
 
-
-//? CONTAINER
-
-@media (min-width: 576px) {
-
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .container {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-
-    .container {
-        max-width: 1320px;
-    }
+  .container {
+    max-width: 1360px;
+  }
 }
 
 .container {
-    margin: auto;
-    padding-inline: 1rem;
+  margin-inline: auto;
 }

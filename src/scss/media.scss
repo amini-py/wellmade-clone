@@ -1,43 +1,178 @@
-// Large & XLarge devices (Laptops, Monitors, bigerr than 1200)
+// Large & XLarge devices (Laptops, Monitors, bigger than 1200)
 @media (min-width: 1199.98px) {
+    .radius {
+        border-radius: 30px;
+    }
+
     .p {
         font-size: 1.2rem;
+    }
+
+    .d-lg-none {
+        display: none;
     }
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-    .h1 {
-        font-size: 2.05em;
-    }
-    .clients-container {
-        width: 100% !important;
-        margin-bottom: 70px;
 
-        .single-client {
-            width: 100% !important;
+    .radius {
+        border-radius: 25px !important;
+    }
+
+    h1 {
+        font-size: 2.05em !important;
+    }
+
+    h2 {
+        font-size: 1.72em !important;
+    }
+
+    h3 {
+        font-size: 1.44em !important;
+    }
+
+    h4 {
+        font-size: 1.22em !important;
+    }
+
+    .margin-top {
+        margin-top: 100px;
+    }
+
+    .gallery-main {
+
+        .d-sm-block {
+            display: block;
+
+            &:first-of-type {
+                padding-right: 2.5px;
+            }
+
+            &:last-of-type {
+                padding-left: 2.5px;
+            }
+
+            img {
+                border-radius: 15px;
+                margin-bottom: 5px;
+            }
         }
     }
-    .client-feedback {
-        width: 100% !important;
-        h2 {
-            font-size: 2rem !important;
+
+    .cards-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        .single-card {
+            min-height: 46vw;
+        }
+    }
+
+    .member-img {
+        width: 225px !important;
+    }
+
+    .member-description {
+        padding-right: 0 !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .member {
+        margin-block: 100px;
+    }
+
+    .gallery-main {
+
+        section {
+            padding-inline: 0.5rem;
+
+            img {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .contact-form-container {
+        .contact-txt {
+            border-radius: 30px 0 0 30px;
+        }
+        .contact-img {
+            border-radius: 0 30px 30px 0;
         }
     }
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+
+    .radius {
+        border-radius: 20px !important;
+    }
+
+    .member {
+        justify-content: start !important;
+        flex-wrap: wrap;
+
+        .member-img,
+        .member-description {
+            width: 100%;
+        }
+
+        .member-img {
+            margin-block: 10px;
+        }
+    }
+    
+    .gallery-main {
+
+        section {
+            padding-inline: 0.25rem;
+
+            img {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .contact-form-container {
+
+        .contact-txt {
+            order: 2;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+        }
+
+        .contact-img {
+            order: 1;
+            height: 200px;
+            border-radius: 15px 15px 0 0;
+        }
+    }
+
+    .footer-item {
+        margin: 10px 0;
+    }
+}
 
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    .h1 {
-        font-size: 1.8em !important;
+    span {
+        font-size: 0.8em !important;
     }
 
-    .p {
-        font-size: 0.9rem !important;
-        padding: 0 !important;
+    p {
+        font-size: 0.9em !important;
+    }
+
+    .cards-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+        .single-card {
+            min-height: 90vw;
+        }
     }
 }
