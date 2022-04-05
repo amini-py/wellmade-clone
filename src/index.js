@@ -1,6 +1,6 @@
-import '../public/css/global.scss'
-import './scss/media.scss'
-import './scss/specific-classes.scss'
+import '../public/css/_global.scss'
+import './scss/_media.scss'
+import './scss/_specific-classes.scss'
 
 // Components
 import './components/cards/_cards.scss';

@@ -1,0 +1,79 @@
+//? COL
+
+/* Mobile First */
+@for $i from 1 to 13 {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: calc(8.33% * #{$i});
+  }
+}
+
+/* sm Breakpoint */
+@media (min-width: 576px) {
+  @for $i from 1 to 13 {
+    .col-sm-#{$i} {
+      flex: 0 0 auto;
+      width: calc(8.33% * #{$i});
+    }
+  }
+}
+
+/* md Breakpoint */
+@media (min-width: 768px) {
+  @for $i from 1 to 13 {
+    .col-md-#{$i} {
+      flex: 0 0 auto;
+      width: calc(8.33% * #{$i});
+    }
+  }
+
+  .d-md-none {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .d-sm-none {
+    display: none;
+  }
+}
+
+
+/* lg Breakpoint */
+@media (min-width: 992px) {
+  @for $i from 1 to 13 {
+    .col-lg-#{$i} {
+      flex: 0 0 auto;
+      width: calc(8.33% * #{$i});
+    }
+  }
+}
+
+/* xl Breakpoint */
+@media (min-width: 1200px) {
+  @for $i from 1 to 13 {
+    .col-xl-#{$i} {
+      flex: 0 0 auto;
+      width: calc(8.33% * #{$i});
+    }
+  }
+}
+
+/* xxl Breakpoint */
+@media (min-width: 1400px) {
+  @for $i from 1 to 13 {
+    .col-xxl-#{$i} {
+      flex: 0 0 auto;
+      width: calc(8.33% * #{$i});
+    }
+  }
+
+  .container {
+    max-width: 1360px;
+  }
+}
+
+.container {
+  margin-inline: auto;
+}

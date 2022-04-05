@@ -1,0 +1,120 @@
+@use '../../src/scss/root/variables';
+@use '../../src/scss/root/mixins';
+
+* {
+	transition: variables.$TRANSITION;
+}
+
+.container-fluid {
+	width: 100%;
+	margin: auto auto;
+}
+
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rounded {
+	border-radius: 100%;
+}
+
+.center {
+	text-align: center;
+	margin-inline: auto;
+}
+
+.margin-top {
+	margin-top: 150px;
+}
+
+.backdrop {
+	@include mixins.wh-100;
+	@include mixins.p-absolute--tl-0;
+
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}
+
+.w-100 {
+	width: 100%;
+}
+
+input {
+	outline: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+	border: 1px solid variables.$COLOR--main;
+	border-radius: 10px;
+	width: 75px;
+	margin: 10px 0 25px 0;
+}
+
+
+//? TYPOGRAPHY
+
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-family: 'MADE Coachella', sans-serif;
+	}
+}
+
+.h1 {
+	font-size: 4.25rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+	line-height: 1.2;
+	font-weight: 400;
+	// margin-top: 50px;
+}
+
+a,
+p,
+span,
+figure {
+	font-family: 'Century Gothic', Arial;
+	max-width: 65ch;
+}
+
+p {
+	color: variables.$COLOR-TYPOGRAPHY--grey;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+
+	&.header-nav-item {
+		color: #222222;
+		padding: 20px;
+		font-size: 1.2em;
+	}
+
+	&.footer-nav-item {
+		color: variables.$COLOR-TYPOGRAPHY--grey;
+	}
+
+	&:hover {
+		color: variables.$COLOR--main;
+	}
+
+	&.button {
+		color: #fff;
+		padding: 10px 50px;
+		background-color: variables.$COLOR--main;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 0.9rem;
+		border-radius: 30px;
+		box-shadow: 0 8px 20px 0 rgb(51 51 51 / 10%);
+	}
+}
+
+div {
+	font-family: 'Century Gothic', sans-serif;
+	font-weight: 700;
+}
