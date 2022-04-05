@@ -1,5 +1,13 @@
 # [Wellmade - link](https://wellmade-website.webflow.io/company)
 #### Wellmade Clone - Project show case<br><br>
+#### Technologies used:
+- HTML Css
+- Scss
+- Javascript
+#### Dependencies used:
+- Webpack
+- Npm
+- Stylelint
 ##### 1. Download or clone the repository using `git clone https://github.com/amini-py/wellmade-clone`
 ##### 2. Install the packages using `npm i` command.
 ##### 3. The final folder is `dist`. Open the HTML file in your browser. <br><br><br>
